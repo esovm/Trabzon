@@ -74,27 +74,6 @@ static struct opt_t opt_clear = {
     }
 };
 
-static struct opt_t opt_add = {
-    .name = "Cell add",
-    .sequence = (struct pattern_t []) {
-        {IBRANCH},
-        {IMUTATE, OPCONSTANT, -1},
-        {IMOVE, OPSTORE, 0},
-        {IMUTATE, OPCONSTANT, 1},
-        {IMOVE, OPLOAD_NEG, 0},
-        {IJUMP},
-        {INOP}
-    },
-    .replacement = (struct pattern_t []) {
-        {IADD, OPLOAD, 0},
-        {ICLEAR},
-        {INOP},
-        {INOP},
-        {INOP},
-        {INOP}
-    }
-};
-
 static const char * const names[] = {
     "MOVE", "MUTATE", "IN", "OUT", "BRANCH",
     "JUMP", "HALT", "CLEAR", "ADD", "NOP"
@@ -303,7 +282,6 @@ static void prgoptimize(struct prg_t * p) {
     do {
         count = 0;
         count += optapply(p, &opt_clear);
-        count += optapply(p, &opt_add);
     } while (count > 0);
 }
 
