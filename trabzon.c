@@ -447,8 +447,6 @@ static struct asm_t * compile(const struct prg_t * prg_t, enum mode_t mode_t) {
                     asmsyscall(buf, SYS_exit);
                 }
                 break;
-            case INOP:
-                break;
         }
     }
     free(table);
