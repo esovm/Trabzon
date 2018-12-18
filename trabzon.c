@@ -14,16 +14,11 @@
 #define MEMORY_SIZE 30000
 
 enum ins_t {
-    IMOVE,
-    IMUTATE,
-    IIN,
-    IOUT,
-    IBRANCH,
-    IJUMP,
-    IHALT,
-    ICLEAR,
-    IADD,
-    INOP
+    IMOVE, IMUTATE,
+    IIN, IOUT,
+    IBRANCH, IJUMP,
+    IHALT, ICLEAR,
+    IADD, INOP
 };
 
 enum op_t {
