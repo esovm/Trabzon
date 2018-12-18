@@ -4,9 +4,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
-#include <stdint.h>
 #include <string.h>
-#include <assert.h>
 #include <unistd.h>
 #include <getopt.h>
 #include <sys/stat.h>
