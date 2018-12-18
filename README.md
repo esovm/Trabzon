@@ -1,2 +1,2 @@
 # Trabzon
-Trabzon is optimizing brainfuck interpreter to suit all of my bfasm needs.
+Trabzon is optimizing brainfuck JIT compiler to suit all of my bfasm needs.
