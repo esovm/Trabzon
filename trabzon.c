@@ -28,7 +28,7 @@
 #include <sys/stat.h>
 #include <sys/mman.h>
 #include <sys/syscall.h>
-#include <elf.h>
+#include <inttypes.h>
 
 #define MEMORY_SIZE 30000
 
